@@ -1,6 +1,6 @@
-const Feedback = ({ stats, totalFeedback }) => {
+const Feedback = ({ stats, totalFeedback, positiveFeedback }) => {
   const { good, neutral, bad } = stats;
-  const positiveFeedback = Math.round((good / totalFeedback) * 100);
+  
 
   return (
     <ul>
